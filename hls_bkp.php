@@ -146,51 +146,37 @@ function hlsplayer_sd( $atts ) {
 		'poster' => '',
     ), $atts ) );
 return <<<HLSPLAYER
+<script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script>
 <video controls crossorigin playsinline id="player" data-poster="{$poster}">
 <source type="video/mp4" src="{$id}">
 </video>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const video = document.querySelector("video");
     const source = video.getElementsByTagName("source")[0].src;
     var fileExtension = source.split('.').pop();
     const defaultOptions = {};
-
-    if(fileExtension == "m3u8"){
+	
         if (Hls.isSupported()) {
-            const hls = new Hls();
-            hls.loadSource(source);
-			
-            hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-			
-            defaultOptions.quality = {
-                default: availableQualities[0],
-                options: availableQualities,
-				
-                forced: true,        
-                onChange: (e) => updateQuality(e),
-            }
-			
-            });
-            hls.attachMedia(video);
-            window.hls = hls;
-        } else {
-		const defaultOptions = {};
-        }
-
-        function updateQuality(newQuality) {
-            window.hls.levels.forEach((level, levelIndex) => {
-            if (level.height === newQuality) {
-                console.log("Found quality match with " + newQuality);
-                window.hls.currentLevel = levelIndex;
-            }
-            });
-        }
-    }
-    else if(fileExtension == "mp4", "mov", "mkv", "avi", "ts", "flv", "webm", "wmv", "mpg", "m4v", "f4v", "m2ts", "mpeg", "3gp", "MP4", "MOV", "MKV", "AVI", "TS", "FLV", "WEBM", "WMV", "MPG", "M4V", "F4V", "M2TS", "MPEG", "3GP"){
-    const defaultOptions = {};
-    }
+        var hls = new Hls({
+          debug: true,
+        });
+        hls.loadSource(source);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+          video.muted = false;
+          video.play();
+        });
+      }
+      // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+      // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
+      // This is using the built-in support of the plain video element, without using hls.js.
+      else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = source;
+        video.addEventListener('canplay', function () {
+          video.play();
+        });
+      }
     });
 </script>
 HLSPLAYER;
