@@ -4,7 +4,7 @@
 }
 
 /* custom a for bvl btn */
-a.bvl:hover {
+a.bvl:hover, a.vl:hover {
     color: #d0d0d0 !important;
 }
 
