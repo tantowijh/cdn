@@ -3,7 +3,10 @@
     background: #0eaf23;
 }
 
-
+/* custom a for bvl btn */
+a.bvl:hover {
+    color: #d0d0d0 !important;
+}
 
 /* widget support styling */
 div .support-widget{
