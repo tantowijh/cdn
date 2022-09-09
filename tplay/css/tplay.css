@@ -14,9 +14,7 @@ div .support-widget{
   text-align: center;
   margin: auto;
 }
-div .support-widget img{
-  padding-bottom:3%;
-}
+
 div .support-btn{
   margin-top: 2%;
   background: var(--tplay);
@@ -66,4 +64,41 @@ div .support-btn:hover{
 }
 .ingfo .minginfo span.r.ONA {
   background: var(--ona);
+}
+
+@keyframes wiggle {
+  0%, 7% {
+  transform: rotateZ(0);
+}
+15% {
+  transform: rotateZ(-15deg);
+}
+20% {
+  transform: rotateZ(10deg);
+}
+25% {
+  transform: rotateZ(-10deg);
+}
+30% {
+  transform: rotateZ(6deg);
+}
+35% {
+  transform: rotateZ(-4deg);
+}
+40%, 100% {
+  transform: rotateZ(0);
+}
+}
+div.support-widget i{
+  font-size: 40px;
+  color: white;
+  padding-bottom: 3%;
+  }
+#iconcontainer:hover > #iconku{
+  animation: wiggle 2s linear infinite;
+}
+@media (prefers-color-scheme: light){
+  body.lightmode div.support-widget i{
+    color: var(--tplay);
+  }
 }
