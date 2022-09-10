@@ -49,9 +49,9 @@ div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
 }
 @keyframes boom {
   0% {color: var(--tplay);}
-  20% {color: #fff;}
+  15% {color: #fff;}
   50% {color: #fff;}
-  80% {color: #fff;}
+  95% {color: #fff;}
   100% {color: var(--tplay);}
 }
 .support-tooltip:hover:before {
@@ -131,4 +131,8 @@ div.support-widget i{
 .darkmode .bixbox.bbnofrm .releases a.vl {
     background: #222;
     color: #fff;
+}
+.bixbox.bbnofrm .releases a.vl {
+  background: #fff;
+  color: #222;
 }
