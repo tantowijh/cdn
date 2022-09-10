@@ -108,3 +108,19 @@ div.support-widget i{
 .jw-controls, .jw-controls-backdrop, .jw-flag-small-player .jw-settings-menu, .jw-overlays, .jw-settings-submenu {
   z-index: 9999;
   }
+
+/* custom for div release homepage */
+.bixbox.bbnofrm .releases {
+    background: var(--tplay);
+}
+div.releases h3 {
+    color: #fff;
+}
+.darkmode .bixbox.bbnofrm .releases a.vl {
+    background: #222;
+    color: #fff;
+}
+.bixbox.bbnofrm .releases a.vl {
+    background: #fff;
+    color: #222;
+}
