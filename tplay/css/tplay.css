@@ -49,7 +49,9 @@ div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
 }
 @keyframes boom {
   0% {color: var(--tplay);}
+  20% {color: #fff;}
   50% {color: #fff;}
+  80% {color: #fff;}
   100% {color: var(--tplay);}
 }
 .support-tooltip:hover:before {
