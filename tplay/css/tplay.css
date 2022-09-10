@@ -18,10 +18,9 @@ div .support-widget{
 div .support-btn{
   margin-top: 2%;
   background: var(--tplay);
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 3px 6px;
   border-radius: 3px;
-  color: whitesmoke;
+  color: #fff;
 }
 div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
   background: #2f2f2f;
