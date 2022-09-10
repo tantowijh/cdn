@@ -102,3 +102,9 @@ div.support-widget i{
     color: var(--tplay);
   }
 }
+
+
+/* custom for jwplayer index */
+.jw-controls, .jw-controls-backdrop, .jw-flag-small-player .jw-settings-menu, .jw-overlays, .jw-settings-submenu {
+  z-index: 9999;
+  }
