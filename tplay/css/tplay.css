@@ -113,24 +113,17 @@ div.support-widget i{
 .bixbox.bbnofrm .releases {
     background: var(--tplay);
 }
-.bixbox.bbnofrm h3 {
+.bixbox.bbnofrm h3, .bixbox.bixboxarc.bbnofrm h1, .bixbox .releases h1, .bixbox.schedulepage h3 {
     color: #fff;
 }
 .darkmode .bixbox.bbnofrm .releases a.vl {
     background: #222;
     color: #fff;
 }
-.bixbox.bbnofrm .releases a.vl {
+.bixbox.bbnofrm .releases a.vl, .bixbox span.hapus {
     background: #fff;
     color: #222;
-}
-.bixbox.bixboxarc.bbnofrm h1 {
-  color: #fff;
 }
 .bixbox .releases {
   background: var(--tplay);
 }
-.bixbox .releases h1 {
-  color: #fff;
-}
-
