@@ -23,7 +23,7 @@ div .support-btn{
   border-radius: 3px;
   color: whitesmoke;
 }
-div .support-btn:hover{
+div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
   background: #efefef;
   color: var(--tplay);
 }
