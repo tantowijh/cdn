@@ -127,4 +127,10 @@ div.support-widget i{
 .bixbox.bixboxarc.bbnofrm h1 {
   color: #fff;
 }
+.bixbox .releases {
+  background: var(--tplay);
+}
+.bixbox .releases h1 {
+  color: #fff;
+}
 
