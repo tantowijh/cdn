@@ -113,7 +113,7 @@ div.support-widget i{
 .bixbox.bbnofrm .releases {
     background: var(--tplay);
 }
-div.releases h3 {
+.bixbox.bbnofrm h3 {
     color: #fff;
 }
 .darkmode .bixbox.bbnofrm .releases a.vl {
