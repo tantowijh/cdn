@@ -24,6 +24,10 @@ div .support-btn{
   color: whitesmoke;
 }
 div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
+  background: #2f2f2f;
+  color: #fff;
+}
+.darkmode div .support-btn:hover, .darkmode div.filter.submit button.btn.btn-custom-search:hover{
   background: #efefef;
   color: var(--tplay);
 }
