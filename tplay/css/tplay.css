@@ -48,8 +48,9 @@ div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
   display:none;
 }
 @keyframes boom {
-  from {color: #fff;}
-  to {color: var(--tplay);}
+  0% {color: var(--tplay);}
+  50% {color: #fff;}
+  100% {color: var(--tplay);}
 }
 .support-tooltip:hover:before {
 	animation: boom 2s linear infinite;
