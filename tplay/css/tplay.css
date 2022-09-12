@@ -7,6 +7,11 @@
   background: var(--tplay);
   color: #fff;
 }
+/* custom eng styling */
+.bs .bsx .limit .bt span.sb.Eng, .seventh .main-seven .limit .bt span.sb.Eng, .bxcl ul li .epl-sub .status.Eng, .meta .year .status.Eng, .bixbox.episodedl .epwrapper .epheader .entry-info .status.Eng {
+  background: var(--movie);
+  color: #fff;
+}
 
 /* custom a for bvl btn */
 a.bvl:hover, a.vl:hover {
