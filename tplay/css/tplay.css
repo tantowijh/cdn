@@ -2,6 +2,11 @@
 .bs .bsx .limit .typez.Donghua, .seventh .main-seven .limit .bt span.type.Donghua, .stylesix .bsx .thumb .typez.Donghua {
   background: var(--donghua);
 }
+/* custom dual styling */
+.bs .bsx .limit .bt span.sb.Dual, .seventh .main-seven .limit .bt span.sb.Dual, .bxcl ul li .epl-sub .status.Dual, .meta .year .status.Dual, .bixbox.episodedl .epwrapper .epheader .entry-info .status.Dual {
+  background: var(--tplay);
+  color: #fff;
+}
 
 /* custom a for bvl btn */
 a.bvl:hover, a.vl:hover {
