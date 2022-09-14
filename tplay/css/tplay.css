@@ -146,3 +146,30 @@ div.support-widget i{
   background: #fff;
   color: #222;
 }
+
+/* custom slider font transform */
+.slide-content .title a {
+  color: #fff;
+  text-transform: capitalize;
+}
+.slide-content .excerpt .title {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 3px;
+  font-weight: 700;
+  color: #ccc;
+  text-transform: capitalize;
+}
+.slidtop .trending .tdb .textbg .bghover .numa {
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.slidtop .trending .tdb .textbg .bghover .numb {
+  display: block;
+  font-size: 17px;
+  text-transform: capitalize;
+  margin-top: 5px;
+  height: 55px;
+  overflow: hidden;
+}
