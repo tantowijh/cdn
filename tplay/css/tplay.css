@@ -113,15 +113,19 @@ div .support-btn:hover, div.filter.submit button.btn.btn-custom-search:hover{
 }
 div.support-widget i{
   font-size: 40px;
-  color: white;
   padding-bottom: 3%;
   }
 #iconcontainer:hover > #iconku{
   animation: wiggle 2s linear infinite;
 }
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: dark){
   body.lightmode div.support-widget i{
     color: var(--tplay);
+  }
+}
+@media (prefers-color-scheme: dark){
+  body.darkmode div.support-widget i{
+    color: white;
   }
 }
 
